@@ -549,6 +549,7 @@ import {
   RefreshControl,
 } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useFonts } from 'expo-font';
 
 const SelectFruit = ({navigation}) => {
 const recordVideoapple=()=>{
@@ -566,6 +567,15 @@ const recordVideobanana=()=>{
 
 const seclectapple="apple"
 const selectbanana="banana"
+
+const [loaded]=useFonts({
+  Sarabun:require('../../assets/fonts/Sarabun-Medium.ttf')
+})
+
+if(!loaded)
+{
+  return null;
+}
 
   return (
     
@@ -620,7 +630,7 @@ const styles = StyleSheet.create({
     header:{
         fontSize:28,
         color:'#ffffffff',
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         textAlign:'center',
         padding:10,
         // marginBottom: 13,  
@@ -644,7 +654,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     margin: 10,
     fontSize:28,
-    fontFamily:'JosefinSans-SemiBold',
+    fontFamily:'Sarabun',
     textAlign:'center',
 
   },

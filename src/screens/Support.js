@@ -12,6 +12,8 @@ import {
     Pressable,
     // CustomButton,
   } from 'react-native';
+import { useFonts } from 'expo-font';
+
   // import { createDrawerNavigator } from "@react-navigation/drawer";
   // import { NavigationContainer } from "@react-navigation/native";
   // import { ImageBackground } from "react-native";
@@ -38,6 +40,15 @@ import {
   {
     const onPressHandler=()=>{
       navigation.navigate('Main')
+    }
+
+    const [loaded]=useFonts({
+      Sarabun:require('../../assets/fonts/Sarabun-Medium.ttf')
+    })
+    
+    if(!loaded)
+    {
+      return null;
     }
 
     return (
@@ -67,7 +78,7 @@ import {
             
             <View style={styles.boxcontent}>
               <Text style={styles.boxtext1}>
-                +(91) 2242335000
+                +(91) 22 4233 5000
               </Text>
               <Text style={styles.boxtext2}>
                 info@djsce.ac.in
@@ -155,14 +166,14 @@ import {
       width:"60%",
       left:45,
       top:10,
-      fontFamily:"JosefinSans-SemiBold"
+      fontFamily:"Sarabun"
     },
     boxtext2:{
       color:"#000000",
       width:"60%",
       left:52,
       top:30,
-      fontFamily:"JosefinSans-SemiBold"
+      fontFamily:"Sarabun"
       
     },
     boxtext3:{
@@ -170,7 +181,7 @@ import {
       width:"60%",
       top:50,
       left:45,
-      fontFamily:"JosefinSans-SemiBold"
+      fontFamily:"Sarabun"
     },
 
     text1:{
@@ -178,7 +189,7 @@ import {
       left:42,
       width:"40%",
       top:180,
-      fontFamily:"JosefinSans-SemiBold"
+      fontFamily:"Sarabun"
     },
     text2:{
       textAlign:"center",
@@ -187,12 +198,12 @@ import {
       top:420,
       left:70,
       color:"#000000",
-      fontFamily:"JosefinSans-SemiBold"
+      fontFamily:"Sarabun"
     },
     about_text:{
       color:"#000000",
-      fontFamily:"JosefinSans-SemiBold",
-      top:400,
+      fontFamily:"Sarabun",
+      top:380,
       left:70,
     },
     pikFresh_text:{
@@ -200,7 +211,8 @@ import {
       width:"70%",
       left:42,
       top:30,
-      fontFamily:"JosefinSans-SemiBold",
+      fontFamily:"Sarabun",
+      textAlign:"justify"
     },
     inner:{
         backgroundColor:"#9BCCA5",
@@ -214,7 +226,7 @@ import {
         height:700,
         width:'80%',
         transform:[{rotate:'245deg'}],
-        top:-152,  
+        top:-117,  
     },
     inner2:{
         backgroundColor:"#000000",
@@ -233,7 +245,7 @@ import {
     text:{
         fontSize:55,
         color:'#000000',
-        fontFamily:'JosefinSans-Bold',
+        fontFamily:'Sarabun',
         textAlign:'center',
         top:100,
     },

@@ -14,7 +14,7 @@ import {
   } from 'react-native';
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { firebase } from '../../config';
-
+import { useFonts } from 'expo-font';
   // import { createDrawerNavigator } from "@react-navigation/drawer";
   // import { NavigationContainer } from "@react-navigation/native";
   // import { ImageBackground } from "react-native";
@@ -77,7 +77,14 @@ import { firebase } from '../../config';
         
     }
 
-    
+    const [loaded]=useFonts({
+        Sarabun:require('../../assets/fonts/Sarabun-Medium.ttf')
+      })
+  
+      if(!loaded)
+      {
+        return null;
+      }
 
     return (
 
@@ -85,7 +92,7 @@ import { firebase } from '../../config';
         <View
             style={styles.container}
         >
-            <Image style={styles.login_logo}  source = {require('../../assets/CreateAccount.png')}/>
+            <Image style={styles.login_logo}  source = {require('../../assets/1.png')}/>
             
           <View style={styles.inner}>
             <Text style={styles.text}>
@@ -117,7 +124,7 @@ import { firebase } from '../../config';
                 </Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Name"
+                    placeholder="Password"
                     onChangeText={(password)=>setPassword(password)}
                     autoCorrect={false}
                     secureTextEntry={true}
@@ -150,7 +157,7 @@ import { firebase } from '../../config';
     
     container:{
       flex:1,
-      backgroundColor:"#9BCCA5",
+      backgroundColor:"#2b463c",
     },
     inner:{
         backgroundColor:"#D9D9D9",
@@ -161,9 +168,9 @@ import { firebase } from '../../config';
     },
     text1:{
         color:"#000000",
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         textAlign:'center',
-        top:50,
+        top:45,
         left:110,
     },
     innerinner:{
@@ -177,21 +184,21 @@ import { firebase } from '../../config';
     text:{
         fontSize:28,
         color:'#000000',
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         textAlign:'center',
         top:10,
     },
     login_logo:{
-        width: 677,
-        height: 469,
-        left: -158,
-        top: -83,
-        marginBottom:-450,
+        width: '60%',
+        height: '40%',
+        left: 70,
+        top: -5,
+        marginBottom:-320,
         alignItems:'center',
         
     },
     textmail:{
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         color:'#000000',
         top:30,
         left:58,
@@ -209,14 +216,14 @@ import { firebase } from '../../config';
         left:55,
     },
     forget:{
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         color:'#000000',
         left:60,
         top:35,
         fontSize:15,
     },
     button:{
-        backgroundColor:"#9BCCA5",
+        backgroundColor:"#D9D9D9",
         borderRadius:15,
         top:45,
         width: 146,
@@ -226,20 +233,17 @@ import { firebase } from '../../config';
 
     },
     stylebutton:{
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         fontSize:20,
         color:'#000000',
         textAlign:'center',
-        top:9,
+        top:5,
     },
     textnew:{
         color:'#000000',
         textAlign:'center',
         top:70,
-        fontFamily:'JosefinSans-SemiBold',
+        fontFamily:'Sarabun',
         textAlign:'center',
     }
-
-    
-     
   })

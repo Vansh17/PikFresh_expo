@@ -94,7 +94,8 @@ import * as Font from 'expo-font';
     //       return null;
     //     }
     const [loaded]=useFonts({
-        BreeSerif:require('../../assets/fonts/BreeSerif-Regular.ttf')
+        Sarabun:require('../../assets/fonts/Sarabun-Medium.ttf')
+        // BreeSerif:require('../../assets/fonts/BreeSerif-Regular.ttf')
       })
   
       if(!loaded)
@@ -130,7 +131,7 @@ import * as Font from 'expo-font';
                 </Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="password"
+                    placeholder="Password"
                     onChangeText={(password)=> setPassword(password)}
                     autoCapitalize="none"
                     autoCorrect={false}
@@ -181,7 +182,7 @@ import * as Font from 'expo-font';
     },
     text1:{
         color:"#000000",
-        fontFamily:'BreeSerif',
+        fontFamily:'Sarabun',
         textAlign:'center',
         top:0,
         left:40,
@@ -189,12 +190,15 @@ import * as Font from 'expo-font';
     button2:{
         // marginTop:10,
         top:45,
-        height:'20%',
-        backgroundColor:'#00bcd4'
+        // marginTop:50,
+        marginLeft:55,
+        width:'100%'
+        // height:'30%',
+        // backgroundColor:'#00bcd4',
     },
     button1:{
-        marginTop:80,
-        backgroundColor:'#00bcd4'
+        marginTop:25,
+        // backgroundColor:'#00bcd4'
     },
     inner:{
         backgroundColor:"#D9D9D9",
@@ -214,7 +218,7 @@ import * as Font from 'expo-font';
     text:{
         fontSize:28,
         color:'#000000',
-        fontFamily:'BreeSerif',
+        fontFamily:'Sarabun',
         textAlign:'center',
         top:10,
     },
@@ -228,7 +232,7 @@ import * as Font from 'expo-font';
         
     },
     textmail:{
-        fontFamily:'BreeSerif',
+        fontFamily:'Sarabun',
         color:'#000000',
         top:30,
         left:40,
@@ -245,18 +249,19 @@ import * as Font from 'expo-font';
         left:55,
     },
     forget:{
-        fontFamily:'BreeSerif',
+        // fontFamily:'BreeSerif',
         color:'#000000',
-        left:35,
-        top:20,
+        // backgroundColor:'#000000',
+        left:-20,
+        top:-10,
         fontSize:15,
         padding:20,
-        // backgroundColor: '#00bcd4',
+        width:'100%',
     },
     button:{
-        backgroundColor:"#9BCCA5",
+        backgroundColor:"#D9D9D9",
         borderRadius:15,
-        top:45,
+        top:35,
         width: 146,
         height: 48,
         left: 120,
@@ -264,24 +269,21 @@ import * as Font from 'expo-font';
         
     },
     stylebutton:{
-        fontFamily:'BreeSerif',
+        fontFamily:'Sarabun',
         fontSize:20,
         color:'#000000',
         textAlign:'center',
-        top:9,
-        backgroundColor:'#00bcd4',
+        top:4,
+        // backgroundColor:'#00bcd4',
         width:'100%',
         height:'120%',
     },
     textnew:{
         color:'#000000',
         textAlign:'center',
-        top:90,
-        fontFamily:'BreeSerif',
+        top:50,
+        fontFamily:'Sarabun',
         textAlign:'center',
         left:-30,
     }
-
-    
-     
   })

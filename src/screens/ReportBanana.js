@@ -2,10 +2,22 @@ import { View, Text ,Alert,StyleSheet,Image} from 'react-native'
 import React, { useState } from 'react'
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable'
 import { render } from 'react-dom';
+import { useFonts } from 'expo-font';
 
 const ReportBanana = ({route}) => {
   // let var1;
    
+  const [loaded]=useFonts({
+    Barlow:require('../../assets/fonts/BarlowCondensed-Regular.ttf'),
+    BreeSerif:require('../../assets/fonts/BreeSerif-Regular.ttf')
+
+  })
+
+  if(!loaded)
+  {
+    return null;
+  }
+
     if(route.params.paramKey4=='Black' || route.params.paramKey4=='Brown')
     {
         if(route.params.paramKey5=='darkyellow')
@@ -16,7 +28,7 @@ const ReportBanana = ({route}) => {
                   <View style={styles.container}>
                     <View style={[styles.card, styles.shadowProp]}>  
                       <Text style={styles.header}>  
-                        Banana
+                        Report
                       </Text>  
                     </View>
                     <View style={styles.logo}>
@@ -37,7 +49,7 @@ const ReportBanana = ({route}) => {
                 <View style={styles.container}>
                   <View style={[styles.card, styles.shadowProp]}>  
                     <Text style={styles.header}>  
-                      Banana
+                      Report
                     </Text>  
                   </View>
                   <View style={styles.logo}>
@@ -61,7 +73,7 @@ const ReportBanana = ({route}) => {
               <View style={styles.container}>
                 <View style={[styles.card, styles.shadowProp]}>  
                   <Text style={styles.header}>  
-                    Banana
+                    Report
                   </Text>  
                 </View>
                 <View style={styles.logo}>
@@ -85,7 +97,7 @@ const ReportBanana = ({route}) => {
               <View style={styles.container}>
                 <View style={[styles.card, styles.shadowProp]}>  
                   <Text style={styles.header}>  
-                    Banana
+                    Report
                   </Text>  
                 </View>
                 <View style={styles.logo}>
@@ -106,7 +118,7 @@ const ReportBanana = ({route}) => {
               <View style={styles.container}>
                 <View style={[styles.card, styles.shadowProp]}>  
                   <Text style={styles.header}>  
-                    Banana
+                    Report
                   </Text>  
                 </View>
                 <View style={styles.logo}>
@@ -127,7 +139,7 @@ const ReportBanana = ({route}) => {
               <View style={styles.container}>
                 <View style={[styles.card, styles.shadowProp]}>  
                   <Text style={styles.header}>  
-                    Banana
+                    Report
                   </Text>  
                 </View>
                 <View style={styles.logo}>
@@ -150,7 +162,7 @@ const ReportBanana = ({route}) => {
         <View style={styles.container}>
           <View style={[styles.card, styles.shadowProp]}>  
             <Text style={styles.header}>  
-              Banana
+              Report
             </Text>  
           </View>
           <View style={styles.logo}>
@@ -184,6 +196,7 @@ const styles = StyleSheet.create({
     textAlign:'left',
     padding:10,
     bottom:20,
+    fontFamily:'Barlow',
   },
   card: {  
     backgroundColor: '#9bcca5',  
@@ -228,10 +241,11 @@ const styles = StyleSheet.create({
   header:{
     fontSize:28,
     color:'#000000',
-    fontFamily:'JosefinSans-SemiBold',
+    fontFamily:'BreeSerif',
     textAlign:'center',
     padding:10,
     marginTop:50,
+
     // marginBottom: 13,  
 },
   shadowProp: {  
