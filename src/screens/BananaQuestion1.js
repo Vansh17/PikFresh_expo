@@ -12,32 +12,10 @@ import {
     Pressable,
     // CustomButton,
   } from 'react-native';
-  // import { createDrawerNavigator } from "@react-navigation/drawer";
-  // import { NavigationContainer } from "@react-navigation/native";
-  // import { ImageBackground } from "react-native";
-// import CustomButton from '../utils/CustomButton';
-
-// import AsyncStorage from "@react-native-async-storage/async-storage";
-// import SQLite from 'react-native-sqlite-storage';
-// import { useSelector, useDispatch } from "react-redux";
-// import { setName,setAge } from "../redux/actions";
-// import PushNotification from "react-native-push-notification";
-
-// const db =SQLite.openDatabase(
-//     {
-//         name:'MainDB',
-//         location:'default',
-//     },
-//     ()=>{ },
-//     error=>{console.log(error)}
-// );
-// const Drawer = createDrawerNavigator();
-// const Drawer = createDrawerNavigator();
-
+ 
   export default function BananaQuestion1({navigation})
   {
-    // const [optionBanana1,setOptionBanana1] =useState('')
-    // const optionBanana1=[]
+    
     const optionBanana11="Black"
     const optionBanana12="Brown"
     const optionBanana13="Green"

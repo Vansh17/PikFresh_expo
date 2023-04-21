@@ -137,9 +137,7 @@ import { useFonts } from 'expo-font';
       height:"8%",
       top:380,
       borderRadius:30,
-      // position: 'absolute',
-      // justifyContent: 'center',
-      // alignItems: 'center',
+      
       left:70,
     },
     pikFresh_box:{
@@ -147,16 +145,12 @@ import { useFonts } from 'expo-font';
       backgroundColor:"#ffffff",
       // height:"0%",
       top:390,
-      // borderRadius:30,
-      // position: 'absolute',
-      // justifyContent: 'center',
-      // alignItems: 'center',
+      
       left:75,
     },
     about_box:{
 
-      // position: 'absolute',
-      // justifyContent: 'center',
+      
       
       left:10,
       top:-65,
@@ -249,42 +243,7 @@ import { useFonts } from 'expo-font';
         textAlign:'center',
         top:100,
     },
-    // textmail:{
-    //     fontFamily:'JosefinSans-SemiBold',
-    //     color:'#000000',
-    //     top:50,
-    //     left:222,
-    //     fontSize:15,
-    //     padding:15,
-    // },
-    // input:{
-    //     top:50,
-    //     borderColor:'#9BCCA5',
-    //     borderWidth:1,
-    //     borderRadius:15,
-    //     width:'70%',
-    //     left:55,
-    // },
-
-    // button:{
-    //     backgroundColor:"#9BCCA5",
-    //     borderRadius:15,
-    //     top:65,
-    //     width: 146,
-    //     height: 48,
-    //     left: 120,
-    //     alignItems:'center',
-
-    // },
-    // stylebutton:{
-    //     fontFamily:'JosefinSans-SemiBold',
-    //     fontSize:20,
-    //     color:'#000000',
-    //     textAlign:'center',
-    //     top:9,
-    //     alignSelf:'center',
-    // },
-
+    
 
     
      

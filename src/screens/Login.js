@@ -15,38 +15,14 @@ import {
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useFonts } from 'expo-font';
 
-  // import { createDrawerNavigator } from "@react-navigation/drawer";
-  // import { NavigationContainer } from "@react-navigation/native";
-  // import { ImageBackground } from "react-native";
-// import CustomButton from '../utils/CustomButton';
 
-// import AsyncStorage from "@react-native-async-storage/async-storage";
-// import SQLite from 'react-native-sqlite-storage';
-// import { useSelector, useDispatch } from "react-redux";
-// import { setName,setAge } from "../redux/actions";
-// import PushNotification from "react-native-push-notification";
 import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 import * as Font from 'expo-font';
-// const db =SQLite.openDatabase(
-//     {
-//         name:'MainDB',
-//         location:'default',
-//     },
-//     ()=>{ },
-//     error=>{console.log(error)}
-// );
-// const Drawer = createDrawerNavigator();
-// const Drawer = createDrawerNavigator();
-// let customFonts = {
-//     'JosefinSans-SemiBold': require('../../assets/fonts/JosefinSans-SemiBold.ttf'),
-//     // 'Inter-SemiBoldItalic': 'https://rsms.me/inter/font-files/Inter-SemiBoldItalic.otf?v=3.12',
-//   };
+
   export default function Login({})
   {
-    // const [fontsLoaded] = useFonts({
-    //     'JosefinSans-SemiBold': require('../../assets/fonts/JosefinSans-SemiBold.ttf'),
-    //   });
+    
 
     const onPressHandlerSignup=()=>{
         navigation.navigate('CreateAccount')
@@ -76,23 +52,7 @@ import * as Font from 'expo-font';
         })
     }
 
-    // state = {
-    //     fontsLoaded: false,
-    //   };
     
-    //   async _loadFontsAsync() {
-    //     await Font.loadAsync(customFonts);
-    //     this.setState({ fontsLoaded: true });
-    //   }
-    
-    //   componentDidMount() {
-    //     this._loadFontsAsync();
-    //   }
-    
-    //   render() {
-    //     if (!this.state.fontsLoaded) {
-    //       return null;
-    //     }
     const [loaded]=useFonts({
         Sarabun:require('../../assets/fonts/Sarabun-Medium.ttf')
         // BreeSerif:require('../../assets/fonts/BreeSerif-Regular.ttf')
@@ -125,6 +85,7 @@ import * as Font from 'expo-font';
                     onChangeText={(email)=> setEmail(email)}
                     autoCapitalize="none"
                     autoCorrect={false}
+                    autoComplete='off'
                 />
                 <Text style={styles.textmail}>
                     Password:
@@ -247,6 +208,7 @@ import * as Font from 'expo-font';
         width:'70%',
         height:50,
         left:55,
+        padding:10,
     },
     forget:{
         // fontFamily:'BreeSerif',

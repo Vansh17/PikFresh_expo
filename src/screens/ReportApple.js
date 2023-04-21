@@ -675,8 +675,7 @@ const styles = StyleSheet.create({
     // marginBottom: 13,  
 },
   shadowProp: {  
-    // shadowOffset: {width: -5, height: 4},  
-    // shadowColor: '#000000',  
+    
     shadowOpacity: 0.2,  
      shadowRadius: 3,  
     shadowColor: '#000000',  
