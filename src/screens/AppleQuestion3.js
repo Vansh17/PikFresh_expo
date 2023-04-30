@@ -83,7 +83,7 @@ import {
     header:{
         fontSize:28,
         color:'#ffffffff',
-        fontFamily:'JosefinSans-SemiBold',
+        // fontFamily:'JosefinSans-SemiBold',
         textAlign:'center',
         padding:10,
         // marginBottom: 13,  
@@ -181,7 +181,7 @@ import {
         width:"100%",
         padding:20,
         color:"#000000",
-        fontFamily:"JosefinSans-SemiBold"
+        // fontFamily:"JosefinSans-SemiBold"
     },
     box3:{
       width:"80%",
@@ -209,7 +209,7 @@ import {
         height:37,
         top:340,
         left:60,
-        fontFamily:"JosefinSans-SemiBold",
+        // fontFamily:"JosefinSans-SemiBold",
         borderRadius:10,
     },
     // textbutton:{
@@ -224,7 +224,7 @@ import {
     text1:{
         fontSize:15,
         color:'#000000',
-        fontFamily:'JosefinSans-Bold',
+        // fontFamily:'JosefinSans-Bold',
         textAlign:'center',
         alignSelf:'center',
         justifyContent:'center'
@@ -232,7 +232,7 @@ import {
     textnumber:{
         fontSize:25,
         color:'#000000',
-        fontFamily:'JosefinSans-SemiBold',
+        // fontFamily:'JosefinSans-SemiBold',
         textAlign:'center',
         alignSelf:'center',
         justifyContent:'center'

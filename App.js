@@ -60,7 +60,8 @@ import AppleQuestion4 from './src/screens/AppleQuestion4';
 import Dashboard from './src/screens/Dashboard';
 import ReportBanana from './src/screens/ReportBanana';
 import ReportApple from './src/screens/ReportApple';
-
+import PickImage from './src/screens/PickImage';
+import ScanReport from './src/screens/ScanReport';
 const Stack=createStackNavigator();
 
 
@@ -117,8 +118,22 @@ function App()
            }}
          />
          <Stack.Screen
+           name="PickImage"
+           component ={PickImage}
+           options={{
+             headerShown:false
+           }}
+         />
+         <Stack.Screen
            name="Support"
            component ={Support}
+           options={{
+             headerShown:false
+           }}
+         />
+         <Stack.Screen
+           name="ScanReport"
+           component ={ScanReport}
            options={{
              headerShown:false
            }}
@@ -204,7 +219,20 @@ function App()
             headerShown:false
            }}
      />
-
+     <Stack.Screen
+           name="ScanReport"
+           component ={ScanReport}
+           options={{
+             headerShown:false
+           }}
+         />
+  <Stack.Screen
+           name="PickImage"
+           component ={PickImage}
+           options={{
+             headerShown:false
+           }}
+         />
     <Stack.Screen
             name="Question"
             component ={Question}
